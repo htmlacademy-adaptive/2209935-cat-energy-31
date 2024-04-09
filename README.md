@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Сергей Буй](https://up.htmlacademy.ru/adaptive/31/user/2209935).
-* Наставник: [Андрей Грачев] (https://htmlacademy.ru/profile/angra).
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
 
 ---
 
