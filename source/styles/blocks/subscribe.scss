@@ -1,0 +1,26 @@
+.subscribe {
+  font-family: $headers-font;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+.subscribe__title {
+  @include mp-reset();
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.subscribe__text {
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

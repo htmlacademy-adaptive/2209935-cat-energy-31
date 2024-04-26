@@ -1,0 +1,11 @@
+.button-general {
+  color: #ffffff;
+  background-color: #68b738;
+}
+
+.button-general--find-programm {
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

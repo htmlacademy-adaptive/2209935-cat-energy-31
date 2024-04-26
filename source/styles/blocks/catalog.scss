@@ -1,0 +1,49 @@
+.catalog {
+  font-family: $headers-font;
+  background-color: inherit;
+}
+
+.catalog__list {
+  @include list-style-reset();
+}
+
+.catalog__item {
+  background-color: #f2f2f2;
+}
+
+.catalog__item-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.catalog__item-text {
+  font-family: $general-font;
+  line-height: 18px;
+  color: #444444;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+}
+
+.catalog__item-link {
+  display: block;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #000000;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

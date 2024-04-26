@@ -1,0 +1,61 @@
+.live-example {
+  background-color: #eaeaea;
+  font-family: $headers-font;
+}
+
+.live-example__title {
+  @include mp-reset();
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.live-example__text {
+  font-family: $general-font;
+  color: #444444;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.live-example__facts-list {
+  @include list-style-reset();
+}
+
+.live-example__facts-legend {
+  font-family: $general-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.live-example__facts-text {
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.live-example__costs-wrap {
+  line-height: 20px;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
