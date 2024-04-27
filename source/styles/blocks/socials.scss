@@ -1,0 +1,32 @@
+.socials {
+  display: flex;
+  gap: 24px;
+
+  @include list-style-reset();
+}
+
+.socials__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-position: center;
+}
+
+.socials__link--vk {
+  background-image: url("../../icons/stack.svg#socials-vk");
+  width: 27px;
+  height: 17px;
+}
+
+.socials__link--youtube {
+  background-image: url("../../icons/stack.svg#socials-youtube");
+  width: 24px;
+  height: 19px;
+}
+
+.socials__link--telegram {
+  background-image: url("../../icons/stack.svg#socials-telegram");
+  width: 20px;
+  height: 17px;
+}
+

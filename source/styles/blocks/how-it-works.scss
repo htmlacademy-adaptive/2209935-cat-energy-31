@@ -13,13 +13,58 @@
 
 .how-it-works__list {
   @include list-style-reset();
+}
 
-  .how-it-works__text {
-    color: #444444;
+.how-it-works__text {
+  color: #444444;
 
-    @media (min-width: $viewport-tablet) {
-      font-size: 16px;
-      line-height: 24px;
-    }
+  @media (min-width: $viewport-tablet) {
+    font-size: 16px;
+    line-height: 24px;
   }
+}
+
+.how-it-works__item {
+  display: flex;
+}
+
+.how-it-works__picture {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.how-it-works__picture::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/stack.svg#how-it-works-leaf");
+  background-repeat: no-repeat;
+}
+
+.how-it-works__picture--leaf::before {
+  background-image: url("../../icons/stack.svg#how-it-works-leaf");
+  width: 30px;
+  height: 32px;
+}
+
+.how-it-works__picture--powder::before {
+  background-image: url("../../icons/stack.svg#how-it-works-powder");
+  width: 30px;
+  height: 32px;
+}
+
+.how-it-works__picture--eat::before {
+  background-image: url("../../icons/stack.svg#how-it-works-eat");
+  width: 30px;
+  height: 32px;
+}
+
+.how-it-works__picture--clock::before {
+  background-image: url("../../icons/stack.svg#how-it-works-clock");
+  width: 30px;
+  height: 32px;
 }

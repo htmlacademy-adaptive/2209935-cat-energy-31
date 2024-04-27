@@ -10,3 +10,23 @@
   line-height: 20px;
   color: #000000;
 }
+
+.nav__toggle {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.nav__toggle--close {
+  background-image: url("../../icons/stack.svg#burger-close");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+}
+
+.nav__toggle--open {
+  background-image: url("../../icons/stack.svg#burger-open");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
