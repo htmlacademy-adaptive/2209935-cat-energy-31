@@ -24,6 +24,13 @@
   }
 }
 
+.products__item:last-child {
+  background-image: url("../../icons/stack.svg#products-plus");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 9vw;
+}
+
 .products__title-link,
 .products__more-title {
   font-family: $headers-font;

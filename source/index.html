@@ -13,21 +13,25 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo-link" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-cat-desktop.svg" width="70" height="60">
-          <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-cat-tablet.svg" width="60" height="50">
-          <img class="main-header__logo-image" src="images/logo-cat-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="38">
-        </picture>
-        <picture>
-          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-text.svg" width="118" height="21">
-          <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="Кэт Энерджи" width="101" height="18">
-        </picture>
-      </a>
-      <nav class="main-nav nav main-nav--open">
+      <div class="main-header__header">
+        <a class="main-header__logo-link-image" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-cat-desktop.svg" width="70" height="60">
+            <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-cat-tablet.svg" width="60" height="50">
+            <img class="main-header__logo-image" src="images/logo-cat-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="38">
+          </picture>
+        </a>
+        <a class="main-header__logo-link-text" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-text.svg" width="118" height="21">
+            <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="Кэт Энерджи" width="101" height="18">
+          </picture>
+        </a>
         <button class="nav__toggle nav__toggle--close" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
+      <nav class="main-nav nav main-nav--open">
         <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__list-item">
@@ -155,7 +159,7 @@
     </main>
     <footer class="main-footer">
       <a class="main-footer__logo-link" href="index.html" >
-        <img class="main-footer__logo-text logo-text" src="images/logo-text.svg" alt="Логотип Кэт Энерджи" width="128" height="24">
+        <span class="visually-hidden">Логотип Кэт Энерджи</span>
       </a>
       <ul class="main-footer__socials socials">
         <li class="socials__item">

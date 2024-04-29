@@ -1,3 +1,35 @@
 .main-header {
   background-color: #ffffff;
 }
+
+.main-header__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__logo-image {
+  display: block;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-text {
+  display: block;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

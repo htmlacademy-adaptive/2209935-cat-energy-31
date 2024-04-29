@@ -1,5 +1,26 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
   background-color: #f2f2f2;
+}
+
+.main-footer__logo-link {
+  display: block;
+  width: 128px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#footer-logo-text");
+  background-color: #111111;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #3e3e3e;
+  }
+
+  &:active {
+    background-color: #6b6b6b;
+  }
 }
 
 .main-footer__academy-logo-text-link {
@@ -10,6 +31,10 @@
   font-size: 16px;
   line-height: 16px;
   color: #444444;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-footer__academy-logo-wrapper {
@@ -19,7 +44,17 @@
 
 .main-footer__academy-logo-picture-link {
   display: block;
-  background-image: url("../../icons/stack.svg#htmlacademy-logo");
+  mask-image: url("../../icons/stack.svg#htmlacademy-logo");
+  background-color: #666666;
   width: 27px;
   height: 34px;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: rgba(104, 183, 56, 0.3);
+  }
 }
