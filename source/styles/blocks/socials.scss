@@ -1,0 +1,41 @@
+.socials {
+  display: flex;
+  gap: 24px;
+
+  @include list-style-reset();
+}
+
+.socials__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-position: center;
+  background-color: #666666;
+
+  &:hover {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: rgba(104, 183, 56, 0.3);
+  }
+}
+
+.socials__link--vk {
+  mask-image: url("../../icons/stack.svg#socials-vk");
+  width: 27px;
+  height: 17px;
+}
+
+.socials__link--youtube {
+  mask-image: url("../../icons/stack.svg#socials-youtube");
+  width: 24px;
+  height: 19px;
+}
+
+.socials__link--telegram {
+  mask-image: url("../../icons/stack.svg#socials-telegram");
+  width: 20px;
+  height: 17px;
+}
+

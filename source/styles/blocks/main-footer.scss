@@ -1,8 +1,26 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
   background-color: #f2f2f2;
 }
 
-.main-footer__academy-logo-link {
+.main-footer__logo-link-svg {
+  fill: #111111;
+}
+
+.main-footer__logo-link {
+  &:hover .main-footer__logo-link-svg {
+    fill: #3e3e3e;
+  }
+
+  &:active .main-footer__logo-link-svg {
+    fill: #6b6b6b;
+  }
+}
+
+.main-footer__academy-logo-text-link {
   text-decoration: none;
 }
 
@@ -10,4 +28,27 @@
   font-size: 16px;
   line-height: 16px;
   color: #444444;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__academy-logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer__academy-logo-svg {
+  fill: #666666;
+}
+
+.main-footer__academy-logo-picture-link {
+  &:hover .main-footer__academy-logo-svg {
+    fill: #68b738;
+  }
+
+  &:active .main-footer__academy-logo-svg {
+    fill: rgba(104, 183, 56, 0.3);
+  }
 }

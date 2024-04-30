@@ -1,0 +1,29 @@
+.menu-burger {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.menu-burger--close {
+  background-image: url("../../icons/stack.svg#burger-close");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+}
+
+.menu-burger--open {
+  background-image: url("../../icons/stack.svg#burger-open");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
