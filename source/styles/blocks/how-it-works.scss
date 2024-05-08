@@ -1,9 +1,12 @@
+
 .how-it-works__title {
   @include mp-reset();
   font-family: $headers-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 60px;
@@ -16,20 +19,24 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.how-it-works__text {
-  color: #444444;
-  margin-left: 80px;
+  counter-reset: list-number 0;
 
   @media (min-width: $viewport-tablet) {
-    font-size: 16px;
-    line-height: 24px;
+    flex-flow: wrap;
+    gap: 37px 148px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    gap: 33px;
   }
 }
 
 .how-it-works__item {
   position: relative;
+  display: flex;
+  align-items: center;
+  width: 280px;
+  counter-increment: list-number 1;
 
   &::before {
     content: "";
@@ -37,35 +44,59 @@
     width: 60px;
     height: 60px;
     background-color: #68b738;
+    background-position: center;
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
 
     @media (min-width: $viewport-tablet) {
       width: 80px;
       height: 80px;
+      top: 40px;
     }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 16px;
-    left: 15px;
-    width: 25px;
-    height: 30px;
+  @media (min-width: $viewport-tablet) {
+    &::after {
+      position: absolute;
+      content: counter(list-number);
+      font-family: $headers-font;
+      font-size: 280px;
+      color: #f2f2f2;
+      top: 127px;
+      margin-left: 118px;
+    }
   }
 }
 
-.how-it-works__item--leaf::after {
+.how-it-works__item--leaf::before {
   background-image: url("../../icons/stack.svg#how-it-works-leaf");
 }
 
-.how-it-works__item--powder::after {
+.how-it-works__item--powder::before {
   background-image: url("../../icons/stack.svg#how-it-works-powder");
 }
 
-.how-it-works__item--eat::after {
+.how-it-works__item--eat::before {
   background-image: url("../../icons/stack.svg#how-it-works-eat");
 }
 
-.how-it-works__item--clock::after {
+.how-it-works__item--clock::before {
   background-image: url("../../icons/stack.svg#how-it-works-clock");
+}
+
+.how-it-works__text {
+  position: relative;
+  color: #444444;
+  margin: 0;
+  margin-left: 80px;
+  width: 200px;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 0;
+    padding: 151px 0 57px;
+    width: 245px;
+    z-index: 1;
+  }
 }

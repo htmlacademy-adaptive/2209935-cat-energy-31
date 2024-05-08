@@ -1,35 +1,99 @@
 .main-header {
   background-color: #ffffff;
+  color: #ffffff;
+  background-image: image-set(url("../../images/hero-cat-mobile@1x.jpg") 1x, url("../../images/hero-cat-mobile@2x.jpg") 2x), linear-gradient(#64a73d 302px, #ffffff 302px);
+  background-repeat: no-repeat;
+  background-position: center 267px;
+  padding-inline: 20px;
+
+  @media (min-width: $viewport-tablet) {
+    background-image: none;
+    padding-inline: 30px;
+    padding-top: 25px;
+    width: 608px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    background-color: #ffffff;
+    background-image: image-set(url("../../images/hero-cat-desktop@1x.jpg") 1x, url("../../images/hero-cat-desktop@2x.jpg") 2x);
+    background-size: 50% auto;
+    background-position: right 0;
+    padding-inline: 110px;
+    padding-top: 55px;
+    width: 1220px;
+  }
+}
+
+.main-header__header-wrap {
+  @media (min-width: $viewport-tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .main-header__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $viewport-tablet) {
+    justify-content: start;
+    width: 174px;
+    margin: 0;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    width: 202px;
+  }
+}
+
+.main-header__hero {
+  margin-bottom: 20px;
+  z-index: 1;
+
+  @media (min-width: $viewport-tablet) {
+    margin: 0 auto;
+    width: 708px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    position: relative;
+    min-width: 1220px;
+  }
+}
+
+.main-header__logo-link {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    gap: 13px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    gap: 14px;
+  }
 }
 
 .main-header__logo-image {
   display: block;
-
-  &:hover,
-  &:focus-visible {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
 }
 
 .main-header__logo-text {
   display: block;
-
-  &:hover,
-  &:focus-visible {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
+  margin-right: 73px;
 }

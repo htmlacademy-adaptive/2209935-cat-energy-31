@@ -1,0 +1,14 @@
+.container {
+  padding-inline: 20px;
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: $viewport-tablet) {
+    width: 708px;
+    padding-inline: 30px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    width: 1220px;
+  }
+}

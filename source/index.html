@@ -14,62 +14,59 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <div class="main-header__header">
-      <a class="main-header__logo-link-image" href="index.html">
+  <header class="page__main-header main-header">
+    <div class="main-header__header-wrap">
+      <div class="main-header__header">
+      <a class="main-header__logo-link" href="index.html">
         <span class="visually-hidden">Логотип-картинка Кэт Энерджи</span>
         <picture>
           <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-cat-desktop.svg" width="70" height="60">
           <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-cat-tablet.svg" width="60" height="50">
           <img class="main-header__logo-image" src="images/logo-cat-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="38">
         </picture>
-      </a>
-      <a class="main-header__logo-link-text" href="index.html">
         <span class="visually-hidden">Логотип-текст Кэт Энерджи</span>
         <picture>
           <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-text.svg" width="118" height="21">
           <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="Кэт Энерджи" width="101" height="18">
         </picture>
       </a>
-      <button class="menu-burger menu-burger--close" type="button">
+      <button class="button-burger button-burger--close" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
-    <nav class="main-nav nav main-nav--open">
-      <div class="nav__wrapper">
+    <nav class="nav nav--open">
         <ul class="nav__list">
           <li class="nav__list-item">
-            <a class="main-nav__link nav__link main-nav__link--current" href="index.html">Главная</a>
+            <a class="nav__link nav__link--current" href="index.html">Главная</a>
           </li>
           <li class="nav__list-item">
-            <a class="main-nav__link nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="nav__list-item">
-            <a class="main-nav__link nav__link" href="#">Подбор программы</a>
+            <a class="nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
-      </div>
     </nav>
-  </header>
-  <main class="main-index">
-    <section class="hero">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
+    </div>
+      <section class="main-header__hero hero hero-theme">
+        <h1 class="hero__title">Функциональное<br>питание для котов</h1>
       <p class="hero__subtitle">Занялся собой? Займись котом!</p>
       <picture>
         <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
         <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
         <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" alt="Баночка продукции Кэт Энерджи" width="280" height="270">
       </picture>
-      <a class="button button-general button-general--find-programm" href="#">Подобрать программу</a>
+      <a class="button button-general button-general--find-programm button-general--mobile" href="#">Подобрать программу</a>
     </section>
-    <section class="catalog">
+  </header>
+  <main class="main-index">
+    <section class="page__catalog catalog container">
       <h2 class="visually-hidden">Выбор каталога</h2>
       <ul class="catalog__list">
         <li class="catalog__item catalog__item--slim">
             <p class="catalog__item-title">Похудение</p>
           <p class="catalog__item-text">Ваш кот весит больше собаки и почти утратил способность
-            лазить по деревьям? Пора на диету! Cat Energy Slim поможет
-            вашему питомцу сбросить лишний вес.</p>
+            лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="catalog__item-link" href="#">Каталог slim</a>
         </li>
         <li class="catalog__item catalog__item--pro">
@@ -81,9 +78,9 @@
         </li>
       </ul>
     </section>
-    <section class="how-it-works">
+    <section class="page__how-it-works how-it-works container">
       <h2 class="how-it-works__title">Как это работает</h2>
-      <ul class="how-it-works__list">
+      <ol class="how-it-works__list">
         <li class="how-it-works__item how-it-works__item--leaf">
           <p class="how-it-works__text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
@@ -96,47 +93,51 @@
         <li class="how-it-works__item how-it-works__item--clock">
           <p class="how-it-works__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
         </li>
-      </ul>
+      </ol>
     </section>
-    <section class="live-example">
-      <h2 class="live-example__title">Живой пример</h2>
-      <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-        обычный корм на Cat Energy Slim. Отличный результат
-        без изнуряющих тренировок! При этом он не менял своих
-        привычек и по-прежнему спит по 16 часов в день.</p>
-      <ul class="live-example__facts-list">
-        <li class="live-example__facts-item">
-          <div class="live-example__facts-field">
-            <span class="live-example__facts-legend">Снижение веса</span>
-            <span class="live-example__facts-text">5 КГ</span>
+    <div class="live-example-container">
+      <section class="live-example container">
+        <h2 class="live-example__title">Живой пример</h2>
+        <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+          обычный корм на Cat Energy Slim. Отличный результат
+          без изнуряющих тренировок! При этом он не менял своих
+          привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="live-example__wrapper">
+          <ul class="live-example__facts-list">
+            <li class="live-example__facts-item">
+              <div class="live-example__facts-field">
+                <span class="live-example__facts-legend">Снижение веса</span>
+                <span class="live-example__facts-text">5 КГ</span>
+              </div>
+            </li>
+            <li class="live-example__facts-item">
+              <div class="live-example__facts-field">
+                <span class="live-example__facts-legend live-example__facts-legend--long">Затрачено времени</span>
+                <span class="live-example__facts-text">60 ДНЕЙ</span>
+              </div>
+            </li>
+          </ul>
+          <div class="live-example__cost-wrap">
+            <span class="live-example__cost-title">Затраты на питание:</span>
+            <span class="live-example__cost-price">15 000 РУБ.</span>
           </div>
-        </li>
-        <li class="live-example__facts-item">
-          <div class="live-example__facts-field">
-            <span class="live-example__facts-legend">Затрачено времени</span>
-            <span class="live-example__facts-text">60 ДНЕЙ</span>
-          </div>
-        </li>
-      </ul>
-      <div class="live-example__cost-wrap">
-        <span class="live-example__cost-title">Затраты на питание:</span>
-        <span class="live-example__cost-price">15 000 РУБ.</span>
-      </div>
-      <div class="live-example__slider slider">
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet(desktop)@1x.png 1x, images/cat-fat-tablet(desktop)@2x.png 2x">
-          <img class="live-example__slider-image-one slider__image-one" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" alt="Полный котик" width="280" height="256">
-        </picture>
-        <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet(desktop)@1x.png 1x, images/cat-slim-tablet(desktop)@2x.png 2x">
-          <img class="live-example__slider-image-two slider__image-two" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Худой котик" width="280" height="256">
-        </picture>
-        <div class="live-example__slider-range">
-          <div class="live-example__slider-bar"></div>
-          <button class="live-example__toggle" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
         </div>
-      </div>
-    </section>
+        <div class="live-example__slider slider">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet(desktop)@1x.png 1x, images/cat-fat-tablet(desktop)@2x.png 2x">
+            <img class="live-example__slider-image-one slider__image-one" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" alt="Полный котик" width="280" height="256">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet(desktop)@1x.png 1x, images/cat-slim-tablet(desktop)@2x.png 2x">
+            <img class="live-example__slider-image-two slider__image-two" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Худой котик" width="280" height="256">
+          </picture>
+          <div class="live-example__slider-range">
+            <div class="live-example__slider-bar"></div>
+            <button class="live-example__toggle" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
+          </div>
+        </div>
+      </section>
+    </div>
     <section class="map">
       <h2 class="visually-hidden">Адрес главного штаба кэт энерджи</h2>
       <div class="map__card">
@@ -147,7 +148,7 @@
       <picture>
         <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
         <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img class="map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта расположения главного штаба кэт энерджи" width="320" height="362">
+        <img class="map__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта расположения главного штаба кэт энерджи" width="320" height="362">
       </picture>
     </section>
   </main>
@@ -175,17 +176,13 @@
         </a>
       </li>
     </ul>
-    <div class="main-footer__academy-logo-wrapper">
-      <a class="main-footer__academy-logo-text-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="main-footer__academy-logo-text">HTML Academy</span>
-      </a>
-      <a class="main-footer__academy-logo-picture-link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="main-footer__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Логотип HTML Academy</span>
+        <span class="main-footer__academy-logo-text-link">HTML Academy</span>
         <svg class="main-footer__academy-logo-svg" width="27" height="34">
           <use href="icons/stack.svg#htmlacademy-logo"></use>
         </svg>
       </a>
-    </div>
   </footer>
 </body>
 

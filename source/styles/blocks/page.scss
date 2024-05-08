@@ -1,3 +1,4 @@
+
 .page__body {
   font-family: $general-font;
   font-size: 14px;
@@ -5,4 +6,48 @@
   font-style: normal;
   line-height: 18px;
   color: #000000;
+  margin: 0;
+  background: linear-gradient(#ffffff 267px, #63a63c 267px, #63a63c 569px, #ffffff 569px);
+
+  @media (min-width: $viewport-tablet) {
+    background: none;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    background: linear-gradient(to right, #ffffff 50%, #63a63c 50%);
+  }
+}
+
+.page__main-header {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $viewport-tablet) {
+    width: 708px;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    width: 1220px;
+  }
+}
+
+.page__catalog {
+  margin-bottom: 20px;
+  z-index: 1;
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    padding-top: 82px;
+  }
+}
+
+.page__how-it-works {
+  margin-bottom: 67px;
+}
+
+.page__additional-products {
+  margin-bottom: 40px;
 }

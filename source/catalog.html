@@ -10,43 +10,41 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <div class="main-header__header">
-      <a class="main-header__logo-link-image" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-cat-desktop.svg" width="70" height="60">
-          <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-cat-tablet.svg" width="60" height="50">
-          <img class="main-header__logo-image" src="images/logo-cat-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="38">
-        </picture>
-      </a>
-      <a class="main-header__logo-link-text" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-text.svg" width="118" height="21">
-          <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="Кэт Энерджи" width="101" height="18">
-        </picture>
-      </a>
-      <button class="menu-burger menu-burger--open" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </div>
-    <nav class="main-nav nav main-nav--open">
-      <div class="nav__wrapper">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a class="main-nav__link nav__link main-nav__link--current" href="index.html">Главная</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="main-nav__link nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="main-nav__link nav__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
   <main class="main-catalog">
-    <section class="products">
+    <section class="products container">
+      <header class="main-header">
+        <div class="main-header__header">
+          <a class="main-header__logo-link" href="index.html">
+            <span class="visually-hidden">Логотип-картинка Кэт Энерджи</span>
+            <picture>
+              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-cat-desktop.svg" width="70" height="60">
+              <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-cat-tablet.svg" width="60" height="50">
+              <img class="main-header__logo-image" src="images/logo-cat-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="38">
+            </picture>
+            <span class="visually-hidden">Логотип-текст Кэт Энерджи</span>
+            <picture>
+              <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-text.svg" width="118" height="21">
+              <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="Кэт Энерджи" width="101" height="18">
+            </picture>
+          </a>
+          <button class="button-burger button-burger--close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="nav nav--open">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__link nav__link--catalog nav__link--current" href="index.html">Главная</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link nav__link--catalog" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__link nav__link--catalog" href="#">Подбор программы</a>
+              </li>
+            </ul>
+        </nav>
+      </header>
       <h1 class="products__title">Каталог продукции</h1>
       <ul class="products__list">
         <li class="products__item">
@@ -67,7 +65,7 @@
             <dt class="products__item-details-name">Цена</dt>
             <dd class="products__item-detail">700 ₽</dd>
           </dl>
-          <a class="button button-general" href="#">Заказать</a>
+          <a class="button button-general button-general--order" href="#">Заказать</a>
         </li>
         <li class="products__item">
           <a class="products__image-link" href="#">
@@ -88,7 +86,7 @@
             <dt class="products__item-details-name">Цена</dt>
             <dd class="products__item-detail">1000 ₽</dd>
           </dl>
-          <a class="button button-general" href="#">Заказать</a>
+          <a class="button button-general button-general--order" href="#">Заказать</a>
         </li>
         <li class="products__item">
           <a class="products__image-link" href="#">
@@ -108,7 +106,7 @@
             <dt class="products__item-details-name">Цена</dt>
             <dd class="products__item-detail">700 ₽</dd>
           </dl>
-          <a class="button button-general" href="#">Заказать</a>
+          <a class="button button-general button-general--order" href="#">Заказать</a>
         </li>
         <li class="products__item">
           <a class="products__image-link" href="#">
@@ -128,7 +126,7 @@
             <dt class="products__item-details-name">Цена</dt>
             <dd class="products__item-detail">1000 ₽</dd>
           </dl>
-          <a class="button button-general" href="#">Заказать</a>
+          <a class="button button-general button-general--order" href="#">Заказать</a>
         </li>
         <li class="products__item">
           <a class="products__image-link" href="#">
@@ -148,7 +146,7 @@
             <dt class="products__item-details-name">Цена</dt>
             <dd class="products__item-detail">400 ₽</dd>
           </dl>
-          <a class="button button-general" href="#">Заказать</a>
+          <a class="button button-general button-general--order" href="#">Заказать</a>
         </li>
         <li class="products__item">
           <a class="products__image-link" href="#">
@@ -169,7 +167,7 @@
             <dt class="products__item-details-name">Цена</dt>
             <dd class="products__item-detail">700 ₽</dd>
           </dl>
-          <a class="button button-general" href="#">Заказать</a>
+          <a class="button button-general button-general--order" href="#">Заказать</a>
         </li>
         <li class="products__item">
           <a class="products__image-link" href="#">
@@ -189,16 +187,16 @@
             <dt class="products__item-details-name">Цена</dt>
             <dd class="products__item-detail">500 ₽</dd>
           </dl>
-          <a class="button button-general" href="#">Заказать</a>
+          <a class="button button-general button-general--order" href="#">Заказать</a>
         </li>
-        <li class="products__item">
+        <li class="products__item products__item--more">
           <p class="products__more-title">Показать еще 100500 товаров</p>
           <p class="products__more-text">На самом деле вкусов гораздо больше!</p>
-          <a class="button button-show-all" href="#">Показать все</a>
+          <a class="button button-general button-general--show-all" href="#">Показать все</a>
         </li>
       </ul>
     </section>
-    <section class="additional-products">
+    <section class="page__additional-products additional-products container">
       <h2 class="additional-products__title">Дополнительные товары</h2>
       <div class="additional-products__wrapper">
         <ul class="additional-products__list">
@@ -208,7 +206,7 @@
               <span class="additional-products__name">1 упаковка (100 г)</span>
               <span class="additional-products__cost">200 ₽</span>
             </div>
-            <a class="button button-general" href="#">Заказать</a>
+            <a class="button button-general button-general--order" href="#">Заказать</a>
           </li>
           <li class="additional-products__item">
             <p class="additional-products__item-title">Питьевая вода</p>
@@ -216,7 +214,7 @@
               <span class="additional-products__name">5 литров</span>
               <span class="additional-products__cost">50 ₽</span>
             </div>
-            <a class="button button-general" href="#">Заказать</a>
+            <a class="button button-general button-general--order" href="#">Заказать</a>
           </li>
           <li class="additional-products__item">
             <p class="additional-products__item-title">Молоко</p>
@@ -224,7 +222,7 @@
               <span class="additional-products__name">1 литр</span>
               <span class="additional-products__cost">100 ₽</span>
             </div>
-            <a class="button button-general" href="#">Заказать</a>
+            <a class="button button-general button-general--order" href="#">Заказать</a>
           </li>
           <li class="additional-products__item">
             <p class="additional-products__item-title">Витамины</p>
@@ -232,7 +230,7 @@
               <span class="additional-products__name">1 упаковка (30 г)</span>
               <span class="additional-products__cost">300 ₽</span>
             </div>
-            <a class="button button-general" href="#">Заказать</a>
+            <a class="button button-general button-general--order" href="#">Заказать</a>
           </li>
         </ul>
         <div class="additional-products__order-all">
@@ -240,17 +238,17 @@
         </div>
       </div>
     </section>
-    <section class="subscribe">
+    <section class="subscribe container">
       <h2 class="subscribe__title">Акции и новинки</h2>
       <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
         <label class="subscribe__text" for="subscribe-input">Подпишитесь на наши новости и не пропустите ни одного предложения!</label>
-        <input class="subscribe__input" type="email" id="subscribe-input" name="subscribe-input" required>
-        <button class="button-subscribe" type="submit">Подписаться</button>
+        <input class="subscribe__input" type="email" id="subscribe-input" value="кuklachev@gmail.com" name="subscribe-input" required>
+        <button class="button button-general button-general--subscribe" type="submit">Подписаться</button>
       </form>
     </section>
-    <section class="map">
+    <section class="page__map map">
       <h2 class="visually-hidden">Адрес главного штаба кэт энерджи</h2>
-      <div class="map__card map__card--dark">
+      <div class="map__card map__card--catalog">
         <p class="map__card-title">Приглашаем к сотрудничеству дилеров!</p>
         <address class="map__card-adress">ул. Большая Конюшенная, д. 19/8</address>
         <address class="map__card-town">Санкт-Петербург</address>
@@ -258,7 +256,7 @@
       <picture>
         <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
         <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img class="map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта расположения главного штаба кэт энерджи" width="320" height="362">
+        <img class="map__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта расположения главного штаба кэт энерджи" width="320" height="362">
       </picture>
     </section>
   </main>

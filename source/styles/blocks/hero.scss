@@ -1,20 +1,17 @@
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: $headers-font;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-image: image-set(url("../../images/hero-cat-mobile@1x.jpg") 1x, url("../../images/hero-cat-mobile@2x.jpg") 2x);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
 
   @media (min-width: $viewport-tablet) {
-    background-image: none;
+    align-items: start;
+    padding-bottom: 526px;
   }
 
   @media (min-width: $viewport-desktop) {
-    background-color: #ffffff;
-    background-image: image-set(url("../../images/hero-cat-desktop@1x.jpg") 1x, url("../../images/hero-cat-desktop@2x.jpg") 2x);
-    background-size: 50% auto;
-    background-position: right 0;
+    padding-left: 80px;
+    padding-bottom: 169px;
   }
 }
 
@@ -23,25 +20,59 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 27px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+    padding-top: 65px;
+    text-align: left;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    padding-top: 83px;
   }
 }
 
 .hero__subtitle {
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 29px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+    margin-bottom: 50px;
   }
 }
 
 .hero__image {
   display: block;
+
+  @media (min-width: $viewport-tablet) {
+    position: absolute;
+    top: 366px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    top: 29px;
+    left: 557px;
+  }
+}
+
+.hero__main-header {
+  @media (min-width: $viewport-tablet) {
+    width: 768px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    width: 1220px;
+  }
 }

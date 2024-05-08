@@ -2,12 +2,14 @@
   font-family: $headers-font;
   font-weight: 400;
   background-color: #ffffff;
+  padding-bottom: 40px;
 }
 
 .subscribe__title {
   @include mp-reset();
   font-size: 24px;
   line-height: 24px;
+  margin: 40px 0 32px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 32px;
@@ -15,12 +17,39 @@
   }
 }
 
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $viewport-desktop) {
+    display: grid;
+    grid-template-columns: 376px 256px;
+  }
+}
+
 .subscribe__text {
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 24px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 24px;
     line-height: 32px;
   }
+
+  @media (min-width: $viewport-desktop) {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+}
+
+.subscribe__input {
+  margin-bottom: 16px;
+  border: 1px solid #cdcdcd;
+  padding: 13px;
+  font-family: $headers-font;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #444444;
 }

@@ -6,9 +6,10 @@
 @import "./common/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/container.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
-@import "./blocks/menu-burger.scss";
+@import "./blocks/button-burger.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/main-index.scss";
 @import "./blocks/hero.scss";
@@ -16,13 +17,12 @@
 @import "./blocks/button-general.scss";
 @import "./blocks/catalog.scss";
 @import "./blocks/how-it-works.scss";
+@import "./blocks/live-example-container.scss";
 @import "./blocks/live-example.scss";
 @import "./blocks/map.scss";
 @import "./blocks/main-footer.scss";
 @import "./blocks/products.scss";
-@import "./blocks/button-show-all.scss";
 @import "./blocks/additional-products.scss";
 @import "./blocks/subscribe.scss";
-@import "./blocks/button-subscribe.scss";
 @import "./blocks/socials.scss";
 
