@@ -7,28 +7,22 @@
   line-height: 18px;
   color: #000000;
   margin: 0;
-  background: linear-gradient(#ffffff 267px, #63a63c 267px, #63a63c 569px, #ffffff 569px);
 
-  @media (min-width: $viewport-tablet) {
-    background: none;
-  }
+  &--hero-background {
+    background: linear-gradient(#ffffff 267px, #63a63c 267px, #63a63c 569px, #ffffff 569px);
 
-  @media (min-width: $viewport-desktop) {
-    background: linear-gradient(to right, #ffffff 50%, #63a63c 50%);
+    @media (min-width: $viewport-tablet) {
+      background: none;
+    }
+
+    @media (min-width: $viewport-desktop) {
+      background: linear-gradient(to right, #ffffff 50%, #63a63c 50%);
+    }
   }
 }
 
 .page__main-header {
-  width: 280px;
   margin: 0 auto;
-
-  @media (min-width: $viewport-tablet) {
-    width: 708px;
-  }
-
-  @media (min-width: $viewport-tablet) {
-    width: 1220px;
-  }
 }
 
 .page__catalog {

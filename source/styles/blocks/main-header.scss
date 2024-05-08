@@ -4,13 +4,12 @@
   background-image: image-set(url("../../images/hero-cat-mobile@1x.jpg") 1x, url("../../images/hero-cat-mobile@2x.jpg") 2x), linear-gradient(#64a73d 302px, #ffffff 302px);
   background-repeat: no-repeat;
   background-position: center 267px;
-  padding-inline: 20px;
 
   @media (min-width: $viewport-tablet) {
     background-image: none;
     padding-inline: 30px;
     padding-top: 25px;
-    width: 608px;
+    width: 92%;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -20,8 +19,12 @@
     background-position: right 0;
     padding-inline: 110px;
     padding-top: 55px;
-    width: 1220px;
+    width: 85%;
   }
+}
+
+.main-header--no-background {
+  background: none;
 }
 
 .main-header__header-wrap {

@@ -13,8 +13,8 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
-  <header class="page__main-header main-header">
+<body class="page__body page__body--hero-background">
+  <header class="page__main-header main-header container">
     <div class="main-header__header-wrap">
       <div class="main-header__header">
       <a class="main-header__logo-link" href="index.html">
@@ -30,25 +30,25 @@
           <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="Кэт Энерджи" width="101" height="18">
         </picture>
       </a>
-      <button class="button-burger button-burger--close" type="button">
+      <button class="button-burger button-burger--close button-burger--nojs" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
     <nav class="nav nav--open">
         <ul class="nav__list">
-          <li class="nav__list-item">
-            <a class="nav__link nav__link--current" href="index.html">Главная</a>
+          <li class="nav__item">
+            <a class="nav__link nav__link-current nav__link-current--index-desktop" href="index.html">Главная</a>
           </li>
-          <li class="nav__list-item">
+          <li class="nav__item">
             <a class="nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="nav__list-item">
+          <li class="nav__item">
             <a class="nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
     </nav>
     </div>
-      <section class="main-header__hero hero hero-theme">
+      <section class="main-header__hero hero">
         <h1 class="hero__title">Функциональное<br>питание для котов</h1>
       <p class="hero__subtitle">Занялся собой? Займись котом!</p>
       <picture>

@@ -18,8 +18,8 @@
   @include list-style-reset();
   display: flex;
   flex-direction: column;
-  gap: 20px;
   counter-reset: list-number 0;
+  gap: 6.25vw;
 
   @media (min-width: $viewport-tablet) {
     flex-flow: wrap;
@@ -35,7 +35,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 280px;
+  width: 88vw;
   counter-increment: list-number 1;
 
   &::before {
@@ -89,7 +89,7 @@
   color: #444444;
   margin: 0;
   margin-left: 80px;
-  width: 200px;
+  width: 63vw;
 
   @media (min-width: $viewport-tablet) {
     font-size: 16px;

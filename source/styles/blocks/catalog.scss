@@ -1,5 +1,4 @@
 .catalog {
-  position: relative;
   font-family: $headers-font;
   background-color: inherit;
 }
@@ -24,7 +23,7 @@
   position: relative;
   background-color: #f2f2f2;
   padding: 30px 20px 18px;
-  width: 280px;
+  width: 100%;
   box-sizing: border-box;
 
   &::before {
@@ -61,7 +60,7 @@
   }
 
   @media (min-width: $viewport-tablet) {
-    width: 708px;
+    width: 100%;
     padding: 77px 0 53px 52px;
   }
 
@@ -136,12 +135,11 @@
 }
 
 .catalog__item-text {
-  position: relative;
   font-family: $general-font;
   line-height: 18px;
   color: #444444;
+  width: 71vw;
   min-width: 227px;
-  margin: 0;
   margin-bottom: 42px;
 
   @media (min-width: $viewport-tablet) {
@@ -154,23 +152,10 @@
   @media (min-width: $viewport-desktop) {
     width: 457px;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 113px;
-    display: block;
-    width: 240px;
-    height: 1px;
-    background-color: #d9d9d9;
-
-    @media (min-width: $viewport-tablet) {
-      display: none;
-    }
-  }
 }
 
 .catalog__item-link {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 25px;
@@ -180,6 +165,20 @@
   text-decoration: none;
   color: #000000;
   width: 170px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -19px;
+    display: block;
+    width: 75vw;
+    height: 1px;
+    background-color: #d9d9d9;
+
+    @media (min-width: $viewport-tablet) {
+      display: none;
+    }
+  }
 
   @media (min-width: $viewport-tablet) {
     font-size: 20px;
