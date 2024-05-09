@@ -20,14 +20,15 @@
   flex-direction: column;
   counter-reset: list-number 0;
   gap: 6.25vw;
+  width: 100%;
 
   @media (min-width: $viewport-tablet) {
     flex-flow: wrap;
-    gap: 37px 148px;
+    gap: 37px 90px;
   }
 
   @media (min-width: $viewport-desktop) {
-    gap: 33px;
+    column-gap: 80px;
   }
 }
 
@@ -56,6 +57,8 @@
   }
 
   @media (min-width: $viewport-tablet) {
+    width: 40%;
+
     &::after {
       position: absolute;
       content: counter(list-number);
@@ -65,6 +68,10 @@
       top: 127px;
       margin-left: 118px;
     }
+  }
+
+  @media (min-width: $viewport-desktop) {
+    width: 20%;
   }
 }
 
@@ -89,14 +96,13 @@
   color: #444444;
   margin: 0;
   margin-left: 80px;
-  width: 63vw;
+  width: 72%;
 
   @media (min-width: $viewport-tablet) {
     font-size: 16px;
     line-height: 24px;
     margin-left: 0;
     padding: 151px 0 57px;
-    width: 245px;
     z-index: 1;
   }
 }

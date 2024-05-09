@@ -3,11 +3,12 @@
   width: 88%;
 
   @media (min-width: $viewport-tablet) {
-    width: 92%;
+    width: 92vw;
     padding-inline: 4%;
   }
 
   @media (min-width: $viewport-desktop) {
-    width: 1220px;
+    width: 85vw;
+    padding-inline: 8%;
   }
 }

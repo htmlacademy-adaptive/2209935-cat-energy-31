@@ -3,28 +3,6 @@
   gap: 24px;
 
   @include list-style-reset();
-
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-    left: -80px;
-    width: 280px;
-    height: 1px;
-    background-color: #d9d9d9;
-
-    @media (min-width: $viewport-tablet) {
-      display: none;
-    }
-  }
-
-  &::before {
-    top: -20px;
-  }
-
-  &::after {
-    top: 42px;
-  }
 }
 
 .socials__item {
