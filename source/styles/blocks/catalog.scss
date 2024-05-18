@@ -1,6 +1,7 @@
 .catalog {
   font-family: $headers-font;
   background-color: inherit;
+  box-sizing: border-box;
 }
 
 .catalog__list {
@@ -11,11 +12,13 @@
 
   @media (min-width: $viewport-tablet) {
     gap: 30px;
+    max-width: 972px;
   }
 
   @media (min-width: $viewport-desktop) {
     flex-direction: row;
     gap: 80px;
+    max-width: 1500px;
   }
 }
 
@@ -39,8 +42,9 @@
     @media (min-width: $viewport-tablet) {
       width: 200px;
       height: 200px;
-      top: 81px;
-      left: 63%;
+      top: 92px;
+      left: initial;
+      right: 65px;
     }
 
     @media (min-width: $viewport-desktop) {
@@ -60,12 +64,11 @@
   }
 
   @media (min-width: $viewport-tablet) {
-    width: 100%;
-    padding: 77px 0 53px 52px;
+    padding: 77px 52px 53px;
   }
 
   @media (min-width: $viewport-desktop) {
-    width: 570px;
+    width: 47%;
     padding: 77px 0 55px 52px;
   }
 }
@@ -81,7 +84,8 @@
     width: 140px;
     height: 194px;
     top: 70px;
-    left: 67%;
+    left: initial;
+    right: 93px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -103,7 +107,8 @@
     width: 268px;
     height: 112px;
     top: 135px;
-    left: 420px;
+    left: initial;
+    right: 29px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -138,24 +143,38 @@
   font-family: $general-font;
   line-height: 18px;
   color: #444444;
-  width: 71vw;
+  width: 100%;
   min-width: 227px;
-  margin-bottom: 42px;
+  margin-bottom: 19px;
+
+  &::after {
+    content: "";
+    top: -19px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #d9d9d9;
+    margin-top: 23px;
+
+    @media (min-width: $viewport-tablet) {
+      display: none;
+    }
+  }
 
   @media (min-width: $viewport-tablet) {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    width: 340px;
+    min-width: 340px;
+    width: 51%;
   }
 
   @media (min-width: $viewport-desktop) {
-    width: 457px;
+    width: 80%;
   }
 }
 
 .catalog__item-link {
-  position: relative;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -165,20 +184,6 @@
   text-decoration: none;
   color: #000000;
   width: 170px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -19px;
-    display: block;
-    width: 75vw;
-    height: 1px;
-    background-color: #d9d9d9;
-
-    @media (min-width: $viewport-tablet) {
-      display: none;
-    }
-  }
 
   @media (min-width: $viewport-tablet) {
     font-size: 20px;

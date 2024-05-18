@@ -13,26 +13,29 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body page__body--hero-background">
-  <header class="page__main-header main-header container">
-    <div class="main-header__header-wrap">
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <div class="main-header__header-wrap">
       <div class="main-header__header">
-      <a class="main-header__logo-link" href="index.html">
-        <span class="visually-hidden">Логотип-картинка Кэт Энерджи</span>
-        <picture>
-          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-cat-desktop.svg" width="70" height="60">
-          <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-cat-tablet.svg" width="60" height="50">
-          <img class="main-header__logo-image" src="images/logo-cat-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="38">
-        </picture>
-        <span class="visually-hidden">Логотип-текст Кэт Энерджи</span>
-        <picture>
-          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-text.svg" width="118" height="21">
-          <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="Кэт Энерджи" width="101" height="18">
-        </picture>
-      </a>
-      <button class="button-burger button-burger--close button-burger--nojs" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+        <a class="main-header__logo-link main-header__logo-link--picture" href="index.html">
+          <span class="visually-hidden">Логотип-картинка Кэт Энерджи</span>
+          <picture>
+            <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-cat-desktop.svg" width="70" height="60">
+            <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo-cat-tablet.svg" width="60" height="50">
+            <img class="main-header__logo-image" src="images/logo-cat-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="38">
+          </picture>
+        </a>
+        <a class="main-header__logo-link" href="index.html">
+          <span class="visually-hidden">Логотип-текст Кэт Энерджи</span>
+          <picture>
+            <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo-text.svg" width="118" height="21">
+            <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="Кэт Энерджи" width="101" height="18">
+          </picture>
+        </a>
+        <button class="button-burger button-burger--close button-burger--nojs" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
     </div>
     <nav class="nav nav--open">
         <ul class="nav__list">
@@ -58,6 +61,7 @@
       </picture>
       <a class="button button-general button-general--find-programm button-general--mobile" href="#">Подобрать программу</a>
     </section>
+    </div>
   </header>
   <main class="main-index">
     <section class="page__catalog catalog container">
@@ -95,14 +99,14 @@
         </li>
       </ol>
     </section>
-    <div class="live-example-container">
-      <section class="live-example container">
-        <h2 class="live-example__title">Живой пример</h2>
-        <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+      <section class="live-example">
+        <div class="live-example__wrapper container">
+          <h2 class="live-example__title">Живой пример</h2>
+          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
           обычный корм на Cat Energy Slim. Отличный результат
           без изнуряющих тренировок! При этом он не менял своих
           привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="live-example__wrapper">
+          <div class="live-example__facts-wrapper">
           <ul class="live-example__facts-list">
             <li class="live-example__facts-item">
               <div class="live-example__facts-field">
@@ -121,70 +125,72 @@
             <span class="live-example__cost-title">Затраты на питание:</span>
             <span class="live-example__cost-price">15 000 РУБ.</span>
           </div>
-        </div>
-        <div class="live-example__slider slider">
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet(desktop)@1x.png 1x, images/cat-fat-tablet(desktop)@2x.png 2x">
-            <img class="live-example__slider-image-one slider__image-one" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" alt="Полный котик" width="280" height="256">
-          </picture>
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet(desktop)@1x.png 1x, images/cat-slim-tablet(desktop)@2x.png 2x">
-            <img class="live-example__slider-image-two slider__image-two" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Худой котик" width="280" height="256">
-          </picture>
-          <div class="live-example__slider-range">
-            <div class="live-example__slider-bar"></div>
-            <button class="live-example__toggle" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
+          </div>
+          <div class="live-example__slider slider">
+          <div class="slider__image-wrapper slider__image-wrapper--over" style="width: 50%">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet(desktop)@1x.png 1x, images/cat-fat-tablet(desktop)@2x.png 2x">
+              <img class="slider__image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" alt="Полный котик" width="280" height="256">
+              </picture>
+          </div>
+          <div class="slider__image-wrapper slider__image-wrapper--under">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet(desktop)@1x.png 1x, images/cat-slim-tablet(desktop)@2x.png 2x">
+              <img class="slider__image" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Худой котик" width="280" height="256">
+            </picture>
+          </div>
+          <button class="slider__toggle" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
           </div>
         </div>
       </section>
-    </div>
-    <section class="map">
+    <section class="contacts">
       <h2 class="visually-hidden">Адрес главного штаба кэт энерджи</h2>
-      <div class="map__card">
-        <p class="map__card-title">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="map__card-adress">ул. Большая Конюшенная, д. 19/8</address>
-        <address class="map__card-town">Санкт-Петербург</address>
+      <div class="contacts__card">
+        <p class="contacts__card-title">Приглашаем<br>к сотрудничеству дилеров!</p>
+        <div class="contacts_address-wrap">
+          <address class="contacts__card-adress">ул. Большая Конюшенная, д. 19/8</address>
+          <address class="contacts__card-town">Санкт-Петербург</address>
+        </div>
       </div>
-      <iframe class="map__remote-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65095500796065!2d30.32262650998442!3d59.93871593800417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1715240796731!5m2!1sru!2sru" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <!-- <picture>
-        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img class="map__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта расположения главного штаба кэт энерджи" width="320" height="362">
-      </picture> -->
+      <div class="contacts__map-wrapper">
+        <iframe class="contacts__remote-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65095500796065!2d30.32262650998442!3d59.93871593800417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1715240796731!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
   </main>
-  <footer class="main-footer">
-    <a class="main-footer__logo-link" href="index.html">
-      <span class="visually-hidden">Логотип-текст Кэт Энерджи</span>
-      <svg class="main-footer__logo-link-svg" width="128" height="24" role="img">
-        <use href="icons/stack.svg#footer-logo-text"></use>
-      </svg>
-    </a>
-    <ul class="main-footer__socials socials">
-      <li class="socials__item">
-        <a class="socials__link socials__link--vk" href="#">
-          <span class="visually-hidden">Ссылка на страницу В контакте</span>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link socials__link--youtube" href="#">
-          <span class="visually-hidden">Ссылка на Ютуб-канал</span>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a class="socials__link socials__link--telegram" href="#">
-          <span class="visually-hidden">Ссылка на Телеграм-канал</span>
-        </a>
-      </li>
-    </ul>
-      <a class="main-footer__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">Логотип HTML Academy</span>
-        <span class="main-footer__academy-logo-text-link">HTML Academy</span>
-        <svg class="main-footer__academy-logo-svg" width="27" height="34">
-          <use href="icons/stack.svg#htmlacademy-logo"></use>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__logo-link" href="index.html">
+        <span class="visually-hidden">Логотип-текст Кэт Энерджи</span>
+        <svg class="main-footer__logo-link-svg" width="128" height="24" role="img">
+          <use href="icons/stack.svg#footer-logo-text"></use>
         </svg>
       </a>
-  </footer>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="#">
+            <span class="visually-hidden">Ссылка на страницу В контакте</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="#">
+            <span class="visually-hidden">Ссылка на Ютуб-канал</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="#">
+            <span class="visually-hidden">Ссылка на Телеграм-канал</span>
+          </a>
+        </li>
+      </ul>
+        <a class="main-footer__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Логотип HTML Academy</span>
+          <span class="main-footer__academy-logo-text-link">HTML Academy</span>
+          <svg class="main-footer__academy-logo-svg" width="27" height="34">
+            <use href="icons/stack.svg#htmlacademy-logo"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
 </body>
 
 </html>

@@ -3,10 +3,15 @@
   flex-direction: column;
   align-items: center;
   font-family: $headers-font;
+  background-image: image-set(url("../../images/hero-cat-mobile@1x.jpg") 1x, url("../../images/hero-cat-mobile@2x.jpg") 2x), linear-gradient(to right, #65a73e 50%, #62a53b 50%);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: auto 63%;
 
   @media (min-width: $viewport-tablet) {
     align-items: start;
     padding-bottom: 526px;
+    background-image: none;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -63,7 +68,7 @@
 
   @media (min-width: $viewport-desktop) {
     top: 29px;
-    left: 557px;
+    left: 450px;
   }
 }
 

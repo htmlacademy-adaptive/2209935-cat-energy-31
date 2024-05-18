@@ -1,25 +1,33 @@
 .main-header {
   background-color: #ffffff;
   color: #ffffff;
-  background-image: image-set(url("../../images/hero-cat-mobile@1x.jpg") 1x, url("../../images/hero-cat-mobile@2x.jpg") 2x), linear-gradient(#64a73d 302px, #ffffff 302px);
-  background-repeat: no-repeat;
-  background-position: center 267px;
 
   @media (min-width: $viewport-tablet) {
-    background-image: none;
-    padding-inline: 30px;
     padding-top: 25px;
-    width: 92%;
+    padding-inline: 30px;
   }
 
   @media (min-width: $viewport-desktop) {
     background-color: #ffffff;
-    background-image: image-set(url("../../images/hero-cat-desktop@1x.jpg") 1x, url("../../images/hero-cat-desktop@2x.jpg") 2x);
-    background-size: 50% auto;
-    background-position: right 0;
-    padding-inline: 110px;
+    background-image: image-set(url("../../images/hero-cat-full-desktop@1x.jpg") 1x, url("../../images/hero-cat-full-desktop@2x.jpg") 2x), linear-gradient(to right, #62a53b, #62a53b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50vw 0;
     padding-top: 55px;
-    width: 85%;
+    padding-inline: 110px;
+  }
+}
+
+.main-header__wrapper {
+  min-width: 320px;
+
+  @media (min-width: $viewport-tablet) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    width: 1220px;
   }
 }
 
@@ -40,18 +48,22 @@
 .main-header__header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-top: 13px;
   padding-bottom: 15px;
   width: 280px;
+  padding-inline: 20px;
   margin: 0 auto;
 
   @media (min-width: $viewport-tablet) {
     justify-content: start;
+    min-width: 0;
     width: 174px;
     margin: 0;
+    padding-inline: 0;
   }
 
-  @media (min-width: $viewport-tablet) {
+  @media (min-width: $viewport-desktop) {
     width: 202px;
   }
 }
@@ -72,10 +84,6 @@
 }
 
 .main-header__logo-link {
-  display: flex;
-  align-items: center;
-  gap: 56px;
-
   &:hover,
   &:focus-visible {
     opacity: 0.8;
@@ -91,6 +99,14 @@
 
   @media (min-width: $viewport-desktop) {
     gap: 14px;
+  }
+}
+
+.main-header__logo-link--picture {
+  margin-right: 55px;
+
+  @media (min-width: $viewport-tablet) {
+    margin-right: 13px;
   }
 }
 

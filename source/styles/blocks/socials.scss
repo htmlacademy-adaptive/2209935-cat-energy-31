@@ -1,8 +1,34 @@
 .socials {
   display: flex;
   gap: 24px;
+  position: relative;
+  padding-bottom: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 
   @include list-style-reset();
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #d9d9d9;
+
+    @media (min-width: $viewport-tablet) {
+      display: none;
+    }
+  }
+
+  &::before {
+    top: -20px;
+  }
+
+  &::after {
+    top: 42px;
+  }
 }
 
 .socials__item {

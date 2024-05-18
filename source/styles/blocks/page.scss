@@ -1,3 +1,6 @@
+.page {
+  width: 100%;
+}
 
 .page__body {
   font-family: $general-font;
@@ -7,22 +10,7 @@
   line-height: 18px;
   color: #000000;
   margin: 0;
-
-  &--hero-background {
-    background: linear-gradient(#ffffff 267px, #63a63c 267px, #63a63c 569px, #ffffff 569px);
-
-    @media (min-width: $viewport-tablet) {
-      background: none;
-    }
-
-    @media (min-width: $viewport-desktop) {
-      background: linear-gradient(to right, #ffffff 50%, #63a63c 50%);
-    }
-  }
-}
-
-.page__main-header {
-  margin: 0 auto;
+  width: 100%;
 }
 
 .page__catalog {

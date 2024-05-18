@@ -1,5 +1,9 @@
 .nav {
   display: none;
+
+  @media (min-width: $viewport-desktop) {
+    width: calc(50% - 134px);
+  }
 }
 
 .nav--open {
@@ -10,15 +14,21 @@
   @include list-style-reset();
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   @media (min-width: $viewport-tablet) {
     flex-flow: wrap;
     justify-content: end;
-    min-width: 430px;
   }
 
   @media (min-width: $viewport-tablet) {
     min-width: 480px;
+  }
+}
+
+.nav__list--catalog .nav__link {
+  @media (min-width: $viewport-desktop) {
+    color: #111111;
   }
 }
 
@@ -53,13 +63,6 @@
   }
 }
 
-
-.nav__link--catalog {
-  @media (min-width: $viewport-desktop) {
-    color: #111111;
-  }
-}
-
 .nav__item {
   width: 100%;
   text-align: center;
@@ -69,7 +72,8 @@
   }
 }
 
-.nav__item::before {
+.nav__item::before,
+.nav__item:last-child::after {
   content: "";
   display: block;
   width: 100%;
