@@ -94,6 +94,10 @@
 
 .contacts_address-wrap {
   width: 140px;
+
+  @media (min-width: $viewport-tablet) {
+    width: 157px;
+  }
 }
 
 .contacts__card-adress,

@@ -3,22 +3,34 @@
   font-weight: 400;
   background-color: #ffffff;
   padding-bottom: 40px;
+
+  @media (min-width: $viewport-tablet) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    padding-bottom: 104px;
+  }
 }
 
 .subscribe__title {
   @include mp-reset();
   font-size: 24px;
   line-height: 24px;
-  margin: 40px 0 32px;
+  margin-bottom: 32px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 32px;
     line-height: 32px;
     padding-left: 40px;
+    margin-bottom: 66px;
   }
 
   @media (min-width: $viewport-desktop) {
     padding-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 74px;
   }
 }
 
@@ -70,6 +82,11 @@
   min-width: 280px;
   height: 56px;
   outline: none;
+
+  &--error { /* класс для обозначения ошибки ввода в input */
+    border-width: 2px;
+    border-color: #ff8282;
+  }
 
   &::placeholder {
     opacity: 1;

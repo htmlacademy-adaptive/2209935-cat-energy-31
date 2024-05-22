@@ -33,7 +33,7 @@
             <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="Кэт Энерджи" width="101" height="18">
           </picture>
         </a>
-        <button class="button-burger button-burger--close button-burger--nojs" type="button">
+        <button class="button-burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
     </div>
@@ -54,11 +54,13 @@
       <section class="main-header__hero hero">
         <h1 class="hero__title">Функциональное<br>питание для котов</h1>
       <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-      <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
-        <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" alt="Баночка продукции Кэт Энерджи" width="280" height="270">
+      <div class="hero__image-wrap">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
+          <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" alt="Баночка продукции Кэт Энерджи" width="280" height="270">
       </picture>
+      </div>
       <a class="button button-general button-general--find-programm button-general--mobile" href="#">Подобрать программу</a>
     </section>
     </div>
@@ -100,7 +102,7 @@
       </ol>
     </section>
       <section class="live-example">
-        <div class="live-example__wrapper container">
+          <div class="live-example__wrapper container">
           <h2 class="live-example__title">Живой пример</h2>
           <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
           обычный корм на Cat Energy Slim. Отличный результат
@@ -109,16 +111,12 @@
           <div class="live-example__facts-wrapper">
           <ul class="live-example__facts-list">
             <li class="live-example__facts-item">
-              <div class="live-example__facts-field">
-                <span class="live-example__facts-legend">Снижение веса</span>
-                <span class="live-example__facts-text">5 КГ</span>
-              </div>
+              <span class="live-example__facts-legend">Снижение веса</span>
+              <span class="live-example__facts-text">5 КГ</span>
             </li>
             <li class="live-example__facts-item">
-              <div class="live-example__facts-field">
-                <span class="live-example__facts-legend live-example__facts-legend--long">Затрачено времени</span>
-                <span class="live-example__facts-text">60 ДНЕЙ</span>
-              </div>
+              <span class="live-example__facts-legend live-example__facts-legend--long">Затрачено времени</span>
+              <span class="live-example__facts-text">60 ДНЕЙ</span>
             </li>
           </ul>
           <div class="live-example__cost-wrap">
@@ -126,8 +124,10 @@
             <span class="live-example__cost-price">15 000 РУБ.</span>
           </div>
           </div>
-          <div class="live-example__slider slider">
-          <div class="slider__image-wrapper slider__image-wrapper--over" style="width: 50%">
+        </div>
+        <div class="live-example__slider">
+          <div class="slider">
+            <div class="slider__image-wrapper slider__image-wrapper--over" style="width: 50%">
             <picture>
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet(desktop)@1x.png 1x, images/cat-fat-tablet(desktop)@2x.png 2x">
               <img class="slider__image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" alt="Полный котик" width="280" height="256">
@@ -141,7 +141,7 @@
           </div>
           <button class="slider__toggle" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>
           </div>
-        </div>
+          </div>
       </section>
     <section class="contacts">
       <h2 class="visually-hidden">Адрес главного штаба кэт энерджи</h2>
@@ -165,7 +165,7 @@
           <use href="icons/stack.svg#footer-logo-text"></use>
         </svg>
       </a>
-      <ul class="socials">
+      <ul class="main-footer__socials socials">
         <li class="socials__item">
           <a class="socials__link socials__link--vk" href="#">
             <span class="visually-hidden">Ссылка на страницу В контакте</span>

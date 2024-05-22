@@ -6,7 +6,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 11px;
     left: calc(((100vw - 280px) / 2) * -1);
     width: 100vw;
     height: 2px;
@@ -14,7 +14,7 @@
     z-index: -2;
 
     @media (min-width: $viewport-tablet) {
-      top: 16px;
+      top: 14px;
       left: calc(((100vw - 708px) / 2) * -1);
     }
 
@@ -32,15 +32,17 @@
     left: -40px;
     width: calc(100% + 80px);
     background-color: #ffffff;
-    top: 12px;
+    top: 11px;
     z-index: -1;
 
     @media (min-width: $viewport-tablet) {
-      top: 16px;
+      width: calc(100% + 40px);
+      top: 14px;
       left: 0;
     }
 
     @media (min-width: $viewport-desktop) {
+      width: calc(100% + 80px);
       top: 20px;
       left: -40px;
     }

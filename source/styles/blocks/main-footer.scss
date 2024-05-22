@@ -7,10 +7,12 @@
 
   @media (min-width: $viewport-tablet) {
     padding-inline: 30px;
+    padding-block: 55px;
   }
 
   @media (min-width: $viewport-desktop) {
     padding-inline: 110px;
+    padding-block: 66px;
   }
 }
 
@@ -18,14 +20,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $viewport-tablet) {
     flex-direction: row;
     justify-content: space-between;
     gap: 0;
     width: 708px;
-    margin: 0 auto;
+    min-height: 37px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -38,12 +41,28 @@
 }
 
 .main-footer__logo-link {
+  margin-bottom: 15px;
+
   &:hover .main-footer__logo-link-svg {
     fill: #3e3e3e;
   }
 
   &:active .main-footer__logo-link-svg {
     fill: #6b6b6b;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 0;
+    margin-right: 36px;
+  }
+}
+
+.main-footer__socials {
+  margin: 0;
+  margin-bottom: 19px;
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 0;
   }
 }
 

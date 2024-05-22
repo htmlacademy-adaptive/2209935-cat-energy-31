@@ -5,20 +5,22 @@
   @media (min-width: $viewport-tablet) {
     padding-top: 25px;
     padding-inline: 30px;
+    min-width: 708px;
   }
 
   @media (min-width: $viewport-desktop) {
     background-color: #ffffff;
     background-image: image-set(url("../../images/hero-cat-full-desktop@1x.jpg") 1x, url("../../images/hero-cat-full-desktop@2x.jpg") 2x), linear-gradient(to right, #62a53b, #62a53b);
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: 50vw 0;
     padding-top: 55px;
     padding-inline: 110px;
+    padding-bottom: 50px;
   }
 }
 
 .main-header__wrapper {
+  position: relative;
   min-width: 320px;
 
   @media (min-width: $viewport-tablet) {
@@ -41,6 +43,10 @@
   @media (min-width: $viewport-tablet) {
     display: flex;
     align-items: center;
+    gap: 80px;
+  }
+
+  @media (min-width: $viewport-desktop) {
     justify-content: space-between;
   }
 }
@@ -48,7 +54,6 @@
 .main-header__header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-top: 13px;
   padding-bottom: 15px;
   width: 280px;
@@ -57,10 +62,12 @@
 
   @media (min-width: $viewport-tablet) {
     justify-content: start;
-    min-width: 0;
     width: 174px;
     margin: 0;
     padding-inline: 0;
+    padding-top: 0;
+    gap: 11px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -75,11 +82,13 @@
   @media (min-width: $viewport-tablet) {
     margin: 0 auto;
     width: 708px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $viewport-desktop) {
     position: relative;
-    min-width: 1220px;
+    min-width: 1000px;
+    margin: 0;
   }
 }
 
@@ -92,21 +101,13 @@
   &:active {
     opacity: 0.6;
   }
-
-  @media (min-width: $viewport-tablet) {
-    gap: 13px;
-  }
-
-  @media (min-width: $viewport-desktop) {
-    gap: 14px;
-  }
 }
 
 .main-header__logo-link--picture {
   margin-right: 55px;
 
   @media (min-width: $viewport-tablet) {
-    margin-right: 13px;
+    margin-right: 0;
   }
 }
 

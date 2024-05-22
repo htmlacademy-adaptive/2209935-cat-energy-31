@@ -18,18 +18,45 @@
   z-index: 1;
 
   @media (min-width: $viewport-tablet) {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $viewport-desktop) {
     padding-top: 82px;
+    margin-bottom: 71px;
   }
 }
 
 .page__how-it-works {
-  margin-bottom: 67px;
+  margin-bottom: 49px;
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-bottom: 45px;
+  }
+}
+
+.page__products {
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-bottom: 71px;
+  }
 }
 
 .page__additional-products {
   margin-bottom: 40px;
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    margin-bottom: 111px;
+  }
 }

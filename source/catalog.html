@@ -29,17 +29,17 @@
             <img class="main-header__logo-text logo-text" src="images/logo-text.svg" alt="Кэт Энерджи" width="101" height="18">
           </picture>
         </a>
-        <button class="button-burger button-burger--close button-burger--nojs" type="button">
+        <button class="button-burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
     </div>
     <nav class="nav nav--open">
         <ul class="nav__list nav__list--catalog">
           <li class="nav__item">
-            <a class="nav__link nav__link-current nav__link-current--index-desktop" href="index.html">Главная</a>
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="nav__link nav__link-current" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Подбор программы</a>
@@ -50,7 +50,7 @@
     </div>
   </header>
   <main class="main-catalog">
-    <section class="products container">
+    <section class="page__products products container">
       <h1 class="products__title">Каталог продукции</h1>
       <ul class="products__list">
         <li class="products__item">
@@ -164,7 +164,7 @@
               </picture>
             </div>
           </a>
-          <a class="products__title-link" href="#">Cat Energy SLIM 500 г</a>
+          <a class="products__title-link" href="#">Cat Energy SLIM 1000 г</a>
           <dl class="products__item-details">
             <dt class="products__item-details-name">Масса</dt>
             <dd class="products__item-detail">1000 г</dd>
@@ -240,7 +240,7 @@
           </li>
         </ul>
         <div class="additional-products__order-all">
-          <p class="additional-products__text">Закажите все и получите чехол для кота в подарок!</p>
+          <p class="additional-products__text">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
         </div>
       </div>
     </section>
@@ -274,7 +274,7 @@
         <use href="icons/stack.svg#footer-logo-text"></use>
       </svg>
     </a>
-    <ul class="socials">
+    <ul class="main-footer__socials socials">
       <li class="socials__item">
         <a class="socials__link socials__link--vk" href="#">
           <span class="visually-hidden">Ссылка на страницу В контакте</span>
