@@ -21,7 +21,7 @@
     position: absolute;
     background-color: #ffffff;
     z-index: 2;
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -80,8 +80,10 @@
 .nav__item {
   text-align: center;
 
-  &:last-child .nav__link {
-    padding-right: 0;
+  @media (min-width: $viewport-tablet) {
+    &:last-child .nav__link {
+      padding-right: 0;
+    }
   }
 }
 

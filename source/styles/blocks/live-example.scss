@@ -17,20 +17,11 @@
 }
 
 .live-example__wrapper {
-  position: relative;
   font-family: $headers-font;
+  margin-bottom: 20px;
 
-  &::before {
-    @media (min-width: $viewport-tablet) and (max-width: 1439px) {
-      position: absolute;
-      content: "";
-      top: -45px;
-      left: calc((100vw - $viewport-tablet) / 2 * -1);
-      display: block;
-      width: 100vw;
-      height: 1px;
-      background-color: #e6e6e6;
-    }
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 104px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -81,12 +72,9 @@
 }
 
 .live-example__facts-wrapper {
-  margin-bottom: 20px;
-
   @media (min-width: $viewport-tablet) {
     display: flex;
     align-items: center;
-    margin-bottom: 104px;
     gap: 80px;
   }
 
@@ -94,7 +82,6 @@
     flex-direction: column;
     align-items: start;
     gap: 62px;
-    margin-bottom: 0;
   }
 }
 

@@ -1,11 +1,13 @@
 .main-header {
   background-color: #ffffff;
   color: #ffffff;
+  padding-bottom: 20px;
 
   @media (min-width: $viewport-tablet) {
     padding-top: 25px;
     padding-inline: 30px;
     min-width: 708px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -20,7 +22,6 @@
 }
 
 .main-header__wrapper {
-  position: relative;
   min-width: 320px;
 
   @media (min-width: $viewport-tablet) {
@@ -76,9 +77,6 @@
 }
 
 .main-header__hero {
-  margin-bottom: 20px;
-  z-index: 1;
-
   @media (min-width: $viewport-tablet) {
     margin: 0 auto;
     width: 708px;
@@ -87,12 +85,13 @@
 
   @media (min-width: $viewport-desktop) {
     position: relative;
-    min-width: 1000px;
     margin: 0;
   }
 }
 
 .main-header__logo-link {
+  width: 101px;
+
   &:hover,
   &:focus-visible {
     opacity: 0.8;
@@ -105,9 +104,15 @@
 
 .main-header__logo-link--picture {
   margin-right: 55px;
+  width: 33px;
 
   @media (min-width: $viewport-tablet) {
     margin-right: 0;
+    width: 60px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    width: 70px;
   }
 }
 
