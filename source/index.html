@@ -10,11 +10,13 @@
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--desktop-background">
     <div class="main-header__wrapper">
       <div class="main-header__header-wrap">
       <div class="main-header__header">
@@ -51,13 +53,16 @@
         </ul>
     </nav>
     </div>
-      <section class="main-header__hero hero">
+      <section class="main-header__hero hero hero--background">
         <h1 class="hero__title">Функциональное<br>питание для котов</h1>
       <p class="hero__subtitle">Занялся собой? Займись котом!</p>
       <div class="hero__image-wrap">
         <picture>
+          <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.webp 1x, images/hero-image-desktop@2x.webp 2x">
+          <source width="708" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.webp 1x, images/hero-image-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" srcset="images/hero-image-mobile@1x.webp 1x, images/hero-image-mobile@2x.webp 2x">
           <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
-          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
+          <source width="708" height="609" type="image/png" media="(min-width: 768px)" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
           <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" alt="Баночка продукции Кэт Энерджи" width="280" height="270">
       </picture>
       </div>
@@ -65,7 +70,7 @@
     </section>
     </div>
   </header>
-  <main class="main-index">
+  <main>
     <section class="page__catalog catalog container">
       <h2 class="visually-hidden">Выбор каталога</h2>
       <ul class="catalog__list">
@@ -129,14 +134,18 @@
           <div class="slider">
             <div class="slider__image-wrapper slider__image-wrapper--over" style="width: 50%">
             <picture>
+              <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-fat-tablet(desktop)@1x.webp 1x, images/images/cat-fat-tablet(desktop)@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/cat-fat-mobile@1x.webp 1x, images/images/cat-fat-mobile@2x.webp 2x">
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet(desktop)@1x.png 1x, images/cat-fat-tablet(desktop)@2x.png 2x">
-              <img class="slider__image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" alt="Полный котик" width="280" height="256">
+              <img class="slider__image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" alt="Полный котик" width="280" height="256" loading="lazy">
               </picture>
           </div>
           <div class="slider__image-wrapper slider__image-wrapper--under">
             <picture>
+              <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/cat-slim-tablet(desktop)@1x.webp 1x, images/images/cat-slim-tablet(desktop)@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/cat-fat-mobile@1x.webp 1x, images/images/cat-fat-mobile@2x.webp 2x">
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet(desktop)@1x.png 1x, images/cat-slim-tablet(desktop)@2x.png 2x">
-              <img class="slider__image" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Худой котик" width="280" height="256">
+              <img class="slider__image" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Худой котик" width="280" height="256" loading="lazy">
             </picture>
           </div>
           <button class="slider__toggle" type="button"><span class="visually-hidden">Кнопка слайдера</span></button>

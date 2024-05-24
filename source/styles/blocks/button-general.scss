@@ -17,6 +17,7 @@
   width: 280px;
   padding-block: 10px;
   box-sizing: border-box;
+  justify-self: center;
 
   @media (min-width: $viewport-tablet) {
     font-size: 20px;
@@ -27,6 +28,7 @@
     grid-area: 3 / 1 / 4 / 2;
     margin-left: 90px;
     margin-top: 29px;
+    justify-self: start;
   }
 
   @media (min-width: $viewport-desktop) {

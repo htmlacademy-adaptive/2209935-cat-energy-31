@@ -1,19 +1,15 @@
 .hero {
-  display: flex;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
   flex-direction: column;
   align-items: center;
   font-family: $headers-font;
-  background-image: image-set(url("../../images/hero-cat-mobile@1x.jpg") 1x, url("../../images/hero-cat-mobile@2x.jpg") 2x), linear-gradient(to right, #65a73e 50%, #62a53b 50%);
-  background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: auto 63%;
   padding-top: 27px;
 
   @media (min-width: $viewport-tablet) {
     align-items: start;
     padding-top: 65px;
     background-image: none;
-    display: grid;
     grid-template-rows: repeat(4, auto);
   }
 
@@ -21,6 +17,17 @@
     grid-template-rows: repeat(4, auto);
     padding-top: 29px;
     width: 1000px;
+  }
+}
+
+.hero--background {
+  background-image: image-set(url("../../images/hero-cat-mobile@1x.webp") type("image/webp") 1x, url("../../images/hero-cat-mobile@2x.webp") type("image/webp") 2x, url("../../images/hero-cat-mobile@1x.jpg") type("image/jpeg") 1x, url("../../images/hero-cat-mobile@2x.jpg") type("image/jpeg") 2x), linear-gradient(to right, #65a73e 50%, #62a53b 50%);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: auto 63%;
+
+  @media (min-width: $viewport-tablet) {
+    background: none;
   }
 }
 
@@ -32,6 +39,7 @@
   text-align: center;
   margin-bottom: 25px;
   padding-inline: 20px;
+  color: #ffffff;
   z-index: 1;
 
   @media (min-width: $viewport-tablet) {
@@ -59,6 +67,7 @@
   margin: 0;
   margin-bottom: 29px;
   padding-inline: 20px;
+  color: #ffffff;
   z-index: 1;
 
   @media (min-width: $viewport-tablet) {
@@ -79,6 +88,8 @@
 }
 
 .hero__image-wrap {
+  justify-self: center;
+
   @media (min-width: $viewport-tablet) {
     grid-area: 3 / 1 / 4 / 2;
   }
