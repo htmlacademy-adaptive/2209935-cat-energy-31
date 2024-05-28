@@ -48,13 +48,13 @@
     content: "";
     position: absolute;
     display: block;
-    top: -13px;
+    top: -14px;
     height: 1px;
     width: 100%;
     background-color: #cdcdcd;
 
     @media (min-width: $viewport-tablet) {
-      top: -26px;
+      top: -28px;
     }
 
     @media (min-width: $viewport-desktop) {
@@ -86,7 +86,7 @@
   background-color: #cdcdcd;
 
   @media (min-width: $viewport-tablet) {
-    top: 112px;
+    top: 111px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -106,11 +106,12 @@
   @media (min-width: $viewport-tablet) {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 0;
+    margin-bottom: 3px;
   }
 
   @media (min-width: $viewport-desktop) {
     min-width: 325px;
+    margin-bottom: 0;
   }
 }
 

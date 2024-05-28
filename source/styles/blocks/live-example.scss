@@ -5,12 +5,14 @@
 
   @media (min-width: $viewport-tablet) {
     background-color: #ffffff;
+    padding-top: 27px;
     padding-bottom: 0;
   }
 
   @media (min-width: $viewport-desktop) {
     display: flex;
     gap: 160px;
+    padding-top: 25px;
     padding-bottom: 75px;
     background-image: linear-gradient(#ffffff 163px, #f2f2f2 163px);
   }
@@ -108,7 +110,8 @@
   width: 124px;
   min-height: 56px;
   box-sizing: border-box;
-  padding: 15px;
+  padding-top: 13px;
+  padding-bottom: 15px;
 
   @media (min-width: $viewport-tablet) {
     width: 162px;
@@ -118,8 +121,8 @@
 
 .live-example__facts-legend {
   position: absolute;
-  top: 47px;
-  left: 18px;
+  top: 46px;
+  left: 19px;
   font-family: $general-font;
   font-size: 12px;
   line-height: 12px;

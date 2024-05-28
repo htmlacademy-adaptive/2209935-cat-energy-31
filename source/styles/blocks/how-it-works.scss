@@ -36,14 +36,13 @@
   }
 
   @media (min-width: $viewport-desktop) {
-    column-gap: 80px;
+    column-gap: 81px;
   }
 }
 
 .how-it-works__item {
   position: relative;
   display: flex;
-  align-items: center;
   width: 100%;
   min-height: 60px;
   counter-increment: list-number 1;
@@ -76,7 +75,7 @@
       font-size: 280px;
       color: #f2f2f2;
       top: 90px;
-      margin-left: 116px;
+      left: 116px;
     }
   }
 
@@ -106,13 +105,14 @@
   color: #444444;
   margin: 0;
   margin-left: 80px;
+  margin-top: 2px;
   width: 200px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 16px;
     line-height: 24px;
     margin-left: 0;
-    padding: 111px 0 57px;
+    padding: 109px 0 57px;
     z-index: 1;
     width: 245px;
   }
