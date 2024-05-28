@@ -1,7 +1,5 @@
 .products-card {
   position: relative;
-  min-width: 280px;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   box-sizing: border-box;
@@ -26,7 +24,6 @@
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(#ffffff 81px, #f2f2f2 81px);
-    min-width: 0;
     width: 324px;
     padding: 10px 37px 40px;
   }
@@ -83,7 +80,7 @@
   }
 
   @media (min-width: $viewport-desktop) {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 }
 
@@ -96,7 +93,6 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  padding-top: 2px;
 
   @media (min-width: $viewport-tablet) {
     font-size: 20px;
@@ -152,7 +148,7 @@
   @media (min-width: $viewport-tablet) {
     width: 250px;
     row-gap: 12px;
-    margin-bottom: 37px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -175,6 +171,12 @@
   &:nth-child(2) {
     @media (min-width: $viewport-tablet) {
       min-height: 24px;
+    }
+  }
+
+  &:not(:first-child)::after {
+    @media (min-width: $viewport-tablet) {
+      top: calc(100% + 2px);
     }
   }
 

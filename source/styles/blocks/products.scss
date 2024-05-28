@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $viewport-tablet) {
-    padding-top: 41px;
+    padding-top: 65px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -47,7 +47,6 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 100%;
 
   @media (min-width: $viewport-tablet) {
     flex-flow: wrap;

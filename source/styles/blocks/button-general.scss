@@ -1,4 +1,11 @@
 .button-general {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $headers-font;
+  font-size: 16px;
+  line-height: 20px;
+  box-sizing: border-box;
   color: #ffffff;
   background-color: #68b738;
   text-align: center;

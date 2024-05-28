@@ -74,6 +74,7 @@
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
+    margin-top: 2px;
   }
 }
 
@@ -104,16 +105,17 @@
   @media (min-width: $viewport-tablet) {
     content: "";
     position: absolute;
-    width: calc(100% - 30px);
+    width: calc(100% - 26px);
     height: 2px;
-    left: 15px;
-    top: 38px;
+    left: 14px;
+    top: 36px;
     background-color: #68b738;
     margin-top: 8px;
   }
 
   @media (min-width: $viewport-desktop) {
-    top: 42px;
+    top: 41px;
+    left: 12px;
   }
 }
 

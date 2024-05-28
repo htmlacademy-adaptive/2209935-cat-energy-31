@@ -4,7 +4,6 @@
   @media (min-width: $viewport-tablet) {
     padding-top: 25px;
     padding-inline: 30px;
-    min-width: 708px;
   }
 
   @media (min-width: $viewport-desktop) {
@@ -37,8 +36,6 @@
 }
 
 .main-header__header-wrap {
-  width: 100%;
-
   @media (min-width: $viewport-tablet) {
     display: flex;
     align-items: center;
