@@ -59,7 +59,7 @@
     box-sizing: border-box;
     padding-top: 0;
     padding-bottom: 38px;
-    margin-top: 78px;
+    margin-top: 81px;
   }
 }
 
@@ -104,6 +104,7 @@
   width: 76px;
   margin-bottom: 14px;
   grid-area: 1 / 2 / 2 / 3;
+  padding-top: 2px;
 
   &:hover,
   &:focus-visible {
@@ -118,10 +119,12 @@
     text-align: center;
     width: 135px;
     margin-bottom: 18px;
+    padding-top: 0;
   }
 
   @media (min-width: $viewport-desktop) {
     margin-bottom: 23px;
+    margin-left: -2px;
   }
 }
 
@@ -144,16 +147,17 @@
   display: flex;
   flex-direction: column;
   grid-area: 2 / 2 / 3 / 3;
+  flex-grow: 1;
 
   @media (min-width: $viewport-tablet) {
     width: 250px;
     row-gap: 12px;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $viewport-desktop) {
     width: 169px;
-    margin-bottom: 42px;
+    margin-bottom: 35px;
   }
 }
 
@@ -167,6 +171,7 @@
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  align-items: center;
 
   &:nth-child(2) {
     @media (min-width: $viewport-tablet) {
@@ -174,9 +179,34 @@
     }
   }
 
+  &:last-child {
+    @media (min-width: $viewport-desktop) {
+      min-height: 24px;
+    }
+  }
+
+  &:last-child .products-card__details-name,
+  &:last-child .products-card__detail {
+    @media (min-width: $viewport-desktop) {
+      margin-bottom: 4px;
+    }
+  }
+
   &:not(:first-child)::after {
     @media (min-width: $viewport-tablet) {
       top: calc(100% + 2px);
+    }
+  }
+
+  &:nth-child(2)::after {
+    @media (min-width: $viewport-desktop) {
+      top: calc(100% + 4px);
+    }
+  }
+
+  &:nth-child(3)::after {
+    @media (min-width: $viewport-desktop) {
+      top: calc(100% + 3px);
     }
   }
 
@@ -206,7 +236,7 @@
 .products-card__more-title {
   position: relative;
   margin: 0;
-  padding-top: 60px;
+  padding-top: 59px;
   margin-bottom: 8px;
   text-align: center;
   text-transform: uppercase;
@@ -250,7 +280,7 @@
   }
 
   @media (min-width: $viewport-tablet) {
-    padding-top: 162px;
+    padding-top: 160px;
     margin-bottom: 23px;
     width: 134px;
   }
@@ -262,7 +292,7 @@
 }
 
 .products-card__more-text {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   text-align: center;
 
   @media (min-width: $viewport-tablet) {
