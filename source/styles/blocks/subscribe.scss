@@ -85,7 +85,12 @@
   height: 56px;
   outline: none;
 
-  &--error { /* класс для обозначения ошибки ввода в input */
+  &:user-invalid {
+    border-width: 2px;
+    border-color: #ff8282;
+  }
+
+  &--enter-error { /* класс для обозначения ошибки ввода в input */
     border-width: 2px;
     border-color: #ff8282;
   }
